@@ -127,6 +127,18 @@
         : 'Where Colors are Afraid to Reflect their Light'}
        | Italo Doliva
     </title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YN3X31E9D5"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YN3X31E9D5');
+    </script>
+
 </svelte:head>
 
 <svelte:window 
