@@ -250,7 +250,7 @@
   </div>
   <div data-target="ban-wrapper" class="tour-step step4">
     <p>{$_("tour.step4")}</p>
-    <img src={$locale.slice(0, 2) == 'en' ? ImgBanRectEN : ImgBanRectBR} />
+    <img src={$locale.slice(0, 2) == 'en' ? ImgBanRectEN : ImgBanRectBR} alt=""/>
   </div>
   <div data-target="comparison-wrapper" class="tour-step step5">
     <p>{$_("tour.step5")}</p>

@@ -10,11 +10,11 @@
   let width = 0
   let showTour = false
 
-  onMount(async function() {
-    await csv('src/data/gti_2023.csv')
-        .then(parse)
-        .then(d => data.set(d))
-  })
+  // onMount(async function() {
+  //   await csv('src/data/gti_2023.csv')
+  //       .then(parse)
+  //       .then(d => data.set(d))
+  // })
 
   function swapLocation() {
     locale.update(cur => cur.slice(0, 2) === 'en' ? 'pt' : 'en')

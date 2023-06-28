@@ -1,7 +1,8 @@
 import { readable, writable, derived } from "svelte/store"
 import { scaleLinear, extent } from 'd3'
+import getData from "../utils/getData"
 
-export const data = writable([])
+export const data = readable(getData())
 
 export const continents = readable(['c2', 'c5', 'c4', 'c3', 'c1', 'c0'])
 
