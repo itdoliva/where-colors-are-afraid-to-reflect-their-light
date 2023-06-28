@@ -1,10 +1,10 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import { toOrdinal } from '../utils/toOrdinal'
-  import { scales } from "../stores/global";
-  import { _, locale } from 'svelte-i18n'
-  import Dropdown from './Dropdown.svelte';
   import { fade } from 'svelte/transition';
+  import { _, locale } from 'svelte-i18n'
+  import { toOrdinal } from './utils/toOrdinal'
+  import { scales } from "./stores/global";
+  import Dropdown from './Dropdown.svelte';
 
   export let id
   export let node

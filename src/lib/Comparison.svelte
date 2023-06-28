@@ -1,7 +1,7 @@
 <script>
-  import Categories from "./Categories.svelte"
-  import { categories } from "../stores/global";
   import { _ } from 'svelte-i18n'
+  import Categories from "./Categories.svelte"
+  import { categories } from "./stores/global";
 
   export let nodeA
   export let nodeB

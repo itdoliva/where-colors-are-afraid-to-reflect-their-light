@@ -1,8 +1,8 @@
 <script>
   import { range, scaleLinear } from "d3";
-  import { scales } from "../stores/global";
   import { tweened } from "svelte/motion";
   import { fly } from "svelte/transition";
+  import { scales } from "./stores/global";
 
   export let nodeH
 

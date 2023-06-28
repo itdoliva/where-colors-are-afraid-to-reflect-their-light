@@ -1,4 +1,8 @@
 <script>
+  import { _, locale } from 'svelte-i18n'
+  import { fade } from 'svelte/transition';
+  
+  import Category from "./Category.svelte"
   import Flag from './Flag.svelte'
   import IndexBan from './IndexBan.svelte'
   import GlobalRank from './GlobalRank.svelte';
@@ -6,11 +10,8 @@
   import Switch from './Switch.svelte';
   import ColorBar from './ColorBar.svelte';
   import Tour from "./Tour.svelte";
-  import Category from "./Category.svelte"
-  import { colors, data, continents } from '../stores/global'
-  import { _, locale } from 'svelte-i18n'
-  import { fade } from 'svelte/transition';
-
+  
+  import { colors, data, continents } from './stores/global'
   import ImgBanRectEN from "./assets/banrect-en.png"
   import ImgBanRectBR from "./assets/banrect-br.png"
   

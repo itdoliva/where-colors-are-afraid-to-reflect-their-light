@@ -1,8 +1,8 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import { data, colors, continents } from "../stores/global";
   import { _, locale } from 'svelte-i18n'
-  import { toOrdinal } from '../utils/toOrdinal';
+  import { data, colors, continents } from "./stores/global";
+  import { toOrdinal } from './utils/toOrdinal';
 
   export let idH
   export let nodeH

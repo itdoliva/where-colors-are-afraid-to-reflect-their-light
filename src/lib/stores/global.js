@@ -1,6 +1,6 @@
 import { readable, writable, derived } from "svelte/store"
 import { scaleLinear, extent } from 'd3'
-import getData from "../utils/getData"
+import getData from "$lib/utils/getData"
 
 export const data = readable(getData())
 

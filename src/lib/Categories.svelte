@@ -1,10 +1,10 @@
 <script>
   import { fade, fly } from "svelte/transition"
-  import { scaleBand, arc, range, interpolateLab } from "d3"
-  import { categories, scales } from "../stores/global"
   import { _ } from 'svelte-i18n'
   import { tweened } from "svelte/motion";
   import { onDestroy } from "svelte";
+  import { scaleBand, arc, range, interpolateLab } from "d3"
+  import { categories, scales } from "./stores/global"
 
   export let node
   export let margin

@@ -1,7 +1,7 @@
 <script>
 	import { _ } from 'svelte-i18n';
-  import { range } from 'd3';
-	import tourAction from '../utils/tourAction'
+  	import { range } from 'd3';
+	import tourAction from './utils/tourAction'
 
 	export let showTour = false
 	export let currentStepPos = 0

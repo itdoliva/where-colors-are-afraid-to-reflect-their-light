@@ -1,7 +1,8 @@
 <script>
   import { _ } from "svelte-i18n"
-  import { colors } from "../stores/global"
   import { range, scaleBand } from "d3";
+  import { colors } from "./stores/global"
+  
   export let i
   export let id
   export let curStep

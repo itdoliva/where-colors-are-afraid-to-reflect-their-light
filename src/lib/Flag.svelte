@@ -1,10 +1,10 @@
 <script>
   import { createEventDispatcher, onDestroy } from 'svelte';
-  import { interpolateLab } from 'd3';
 	import { fade, fly, slide } from 'svelte/transition';
-  import { data, continents, scales, colors, emphasized } from "../stores/global";
-  import { _ } from 'svelte-i18n'
   import { tweened } from 'svelte/motion';
+  import { _ } from 'svelte-i18n'
+  import { interpolateLab } from 'd3';
+  import { data, continents, scales, colors, emphasized } from "./stores/global";
 
   export let idA
   export let idB

@@ -1,82 +1,81 @@
 <script>
   import { onDestroy } from "svelte";
-  import { categories } from "../stores/global";
-  import { range, arc } from "d3";
   import { _ } from "svelte-i18n";
+  import { range, arc } from "d3";
+  import { categories } from "./stores/global";
 
+  let width = 0
+  let height = 0
+  let category = getRandomCategory()
+  let curPos = 0
 
-let width = 0
-let height = 0
-let category = getRandomCategory()
-let curPos = 0
-
-const pal = {
-  out: '#E3E3E3',
-  zero: '#ABAAA6',
-  positive: '#94C277',
-  negative: '#DB8E8E'
-}
-
-const interval = setInterval(incrementPos, 1500)
-onDestroy(() => clearInterval(interval))
-
-const arcGenerator = arc()
-  .startAngle(p => p !== 0 ? -Math.PI/2 : 0)
-  .endAngle(p => p !== 0 ? Math.PI/2 : 2*Math.PI) 
-
-$: extent = category?.range
-$: points = range(extent[0], extent[1]+1, 1)
-$: arcWidth = height / 22
-$: pointsData = genPointsData(points, curPos, arcWidth)
-$: arcGenerator
-  .innerRadius(p => Math.abs(p) * arcWidth * 1.75)
-  .outerRadius(p => Math.abs(p) * arcWidth * 1.75 + arcWidth)
-
-
-
-function getRandomCategory() {
-  return $categories[Math.random() * $categories.length | 0]
-}
-
-function incrementPos() {
-  if (curPos >= points.length -1) {
-    category = getRandomCategory()
-    curPos = 0
-    return
+  const pal = {
+    out: '#E3E3E3',
+    zero: '#ABAAA6',
+    positive: '#94C277',
+    negative: '#DB8E8E'
   }
 
-  curPos++
-}
+  const interval = setInterval(incrementPos, 1500)
+  onDestroy(() => clearInterval(interval))
+
+  const arcGenerator = arc()
+    .startAngle(p => p !== 0 ? -Math.PI/2 : 0)
+    .endAngle(p => p !== 0 ? Math.PI/2 : 2*Math.PI) 
+
+  $: extent = category?.range
+  $: points = range(extent[0], extent[1]+1, 1)
+  $: arcWidth = height / 22
+  $: pointsData = genPointsData(points, curPos, arcWidth)
+  $: arcGenerator
+    .innerRadius(p => Math.abs(p) * arcWidth * 1.75)
+    .outerRadius(p => Math.abs(p) * arcWidth * 1.75 + arcWidth)
 
 
-function genPointsData(points, curPos, arcWidth) {
-  return points.map((p) => ({
-    p,
-    tY: p === 0 ? 0 : p < 0 ? arcWidth/3 : -arcWidth/3,
-    rotate: p < 0 ? 180 : 0,
-    d: arcGenerator(p),
-    fill: color(p, points[curPos])
-  }))
-}
 
-
-function color(p, v) {
-  
-
-  if (p < 0 && v < 0 && p >= v) {
-    return pal.negative
-  } 
-
-  else if (p > 0 && v > 0 && p <= v) {
-    return pal.positive
-  } 
-
-  else if (p === 0 && v === 0) {
-    return pal.zero
+  function getRandomCategory() {
+    return $categories[Math.random() * $categories.length | 0]
   }
 
-  return pal.out
-}
+  function incrementPos() {
+    if (curPos >= points.length -1) {
+      category = getRandomCategory()
+      curPos = 0
+      return
+    }
+
+    curPos++
+  }
+
+
+  function genPointsData(points, curPos, arcWidth) {
+    return points.map((p) => ({
+      p,
+      tY: p === 0 ? 0 : p < 0 ? arcWidth/3 : -arcWidth/3,
+      rotate: p < 0 ? 180 : 0,
+      d: arcGenerator(p),
+      fill: color(p, points[curPos])
+    }))
+  }
+
+
+  function color(p, v) {
+    
+
+    if (p < 0 && v < 0 && p >= v) {
+      return pal.negative
+    } 
+
+    else if (p > 0 && v > 0 && p <= v) {
+      return pal.positive
+    } 
+
+    else if (p === 0 && v === 0) {
+      return pal.zero
+    }
+
+    return pal.out
+  }
 </script>
 
 

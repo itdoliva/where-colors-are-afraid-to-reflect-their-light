@@ -1,20 +1,10 @@
 <script>
-  import { onMount } from "svelte";
   import { _, locale } from "svelte-i18n";
-  import { csv } from "d3"
   import App from "$lib/App.svelte";
-  import parse from '../utils/parse'
-  import { data, colors } from "../stores/global";
-
+  import { colors } from "$lib/stores/global";
 
   let width = 0
   let showTour = false
-
-  // onMount(async function() {
-  //   await csv('src/data/gti_2023.csv')
-  //       .then(parse)
-  //       .then(d => data.set(d))
-  // })
 
   function swapLocation() {
     locale.update(cur => cur.slice(0, 2) === 'en' ? 'pt' : 'en')
@@ -23,6 +13,11 @@
 
 </script>
 
+<svelte:head>
+   <title>{$locale 
+    ? $_("title.1") + " " + $_("title.2") 
+    : 'Where Colors are Afraid to Reflect their Light'} | Italo Doliva</title>
+</svelte:head>
 
 <svelte:window bind:innerWidth={width} />
 

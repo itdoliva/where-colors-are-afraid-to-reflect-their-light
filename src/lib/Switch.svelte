@@ -1,6 +1,6 @@
 <script>
   import { _ } from "svelte-i18n";
-  import { emphasized } from "../stores/global";
+  import { emphasized } from "./stores/global";
 
   function toggleEmphasis(e) {
     emphasized.set(e.target.checked)

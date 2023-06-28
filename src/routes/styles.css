@@ -1,0 +1,116 @@
+@import "@fontsource-variable/open-sans";
+@import "@fontsource-variable/signika";
+@import "@fontsource-variable/signika-negative";
+@import "@fontsource/braah-one";
+
+:root {
+    --font-body: 'Signika', -apple-system, sans-serif;
+    --font-number: 'Open Sans', -apple-system, sans-serif;
+    --black: #1F1E1D;
+    --text-black: #343331;
+    --text-gray: #696863;
+    --off-white: #EFEFEE;
+    --off-white-light: #FAFAF9;
+    --line-gray: #A1A09C;
+    --gray-out: #E3E3E3;
+
+    font-family: var(--font-body);
+    font-size: clamp(12.6px, calc(0.7875rem + (22 - 12.6) * ((100vw - 1280px) / (3440 - 1280))), 22px);
+
+    color: var(--text-black);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: .85rem;
+}
+
+span {
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: inherit;
+    text-align: inherit;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    min-height: 0vw;
+    color: var(--text-black);
+    line-height: 130%;
+}
+
+.number {
+    font-family: var(--font-number);
+}
+
+.number sup {
+    font-weight: 400;
+    font-size: .7em;
+    margin-left: .05em;
+}
+
+a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--text-gray);
+    text-decoration: none;
+    padding: .2em .3em;
+    background: rgba(31, 30, 29, 0.05);
+    cursor: default;
+}
+
+a:hover {
+    background: rgba(31, 30, 29, .85);
+    color: var(--off-white);
+}
+
+.button {
+    background: rgba(31, 30, 29, 0.05);
+    color: var(--text-gray);
+    text-transform: uppercase;
+    width: 10rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: rgba(31, 30, 29, .85);
+    color: var(--off-white);
+}
+
+.dis-none {
+    display: none !important;
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+  }
+    
+::-webkit-scrollbar-thumb {
+    background-color: var(--line-gray);
+}

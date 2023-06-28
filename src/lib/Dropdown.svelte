@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import { continents, data, colors } from "../stores/global";
   import { _ } from 'svelte-i18n'
+  import { continents, data, colors } from "./stores/global";
 
   export let id = 0
   export let node
@@ -161,11 +161,6 @@ bind:this={component}
 
   .placeholder.continent {
     font-size: .8em;
-  }
-
-
-  .input__selected {
-    color: #0b132b;
   }
 
   /* Dropdown styling */
