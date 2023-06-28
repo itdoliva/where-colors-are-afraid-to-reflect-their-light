@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: .5rem;
+    gap: .5em;
   }
 
   .switch input {

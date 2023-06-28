@@ -121,7 +121,7 @@
   .grank-inner {
     position: relative;
     width: 100%;
-    height: .5rem;
+    height: .5em;
   }
 
   .grank__nodes {
@@ -140,8 +140,8 @@
 
   .grank__tooltip {
     position: absolute;
-    width: 120px;
-    top: calc(100% + .25rem);
+    width: 8em;
+    top: calc(100% + .25em);
     opacity: 1;
     transition: transform .15s ease-in-out;
   }
@@ -165,8 +165,12 @@
   }
 
   .grank__tooltip-inner {
-    min-width: 80px;
+    width: 100%;
     padding: 4px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25em;
 
     border-top-width: 4px;
     border-top-style: solid;
@@ -183,18 +187,15 @@
     margin: 0;
   }
 
-
-
   .grank__title {
     margin: 0;
 
     position: absolute;
-    top: 1rem;
+    top: 1em;
     left: 50%;
 
-    font-size: .95rem;
+    font-size: .7em;
     font-weight: 500;
-    font-family: 'Signika Negative', 'Signika', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: var(--text-black);

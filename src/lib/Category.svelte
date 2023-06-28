@@ -124,12 +124,12 @@ bind:clientHeight={height}
 <style>
   .category-wrapper {
     position: relative;
-    height: 18rem;
+    height: 18em;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1rem;
-    margin: 1rem 0;
+    gap: 1em;
+    margin: 1em 0;
   }
 
   .category-header {
@@ -138,7 +138,6 @@ bind:clientHeight={height}
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    gap: 1.6rem;
 
     z-index: 1;
   }
@@ -147,6 +146,7 @@ bind:clientHeight={height}
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    gap: .5em;
   }
 
   .category-header__child.bottom {
@@ -159,7 +159,7 @@ bind:clientHeight={height}
   }
 
   .category-header__child.bottom > h4 {
-    font-size: 6rem;
+    font-size: 5.4em;
     line-height: 100%;
   }
 

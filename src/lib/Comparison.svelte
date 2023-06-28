@@ -42,12 +42,12 @@ bind:clientHeight={height}
   .comparison-wrapper {
     width: 100%;
     height: 100%;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1em 1em 1em;
 
     display: grid;
     grid-template-columns: 44% 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1rem;
+    gap: 1em;
   }
 
   .y-ticklabels {

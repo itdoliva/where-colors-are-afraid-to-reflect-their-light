@@ -124,40 +124,33 @@
 
 	.tour-prompt {
 		position: absolute;
-		width: 25em;
+		width: 22em;
 		box-shadow: 0 0 6px rgba(0, 0, 0, .33);
     transition: left .3s ease-in-out;
 	}
 
-	/* .tour-arrow {
-		position: absolute;
-		margin-top: .1em;
-		border-style: solid;
-		border-width: 0 .5em .5em .5em;
-		border-color: #334 transparent;
-	} */
+
 
 	.tour-body {
-		/* margin-top: .6rem; */
 		background: var(--off-white, #EFEFEE);
 		border: 2px solid var(--text-gray, #696863);
-    padding: .5em .25rem;
+    padding: .5em .25em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    gap: 1rem;
+    gap: 1em;
 	}
 
   .tour-nav {
     display: flex;
     justify-content: center;
-    gap: .3rem;
+    gap: .3em;
   }
 
   .tour-nav > a {
-    width: .75rem;
-    height: .75rem;
+    width: .6em;
+    height: .6em;
     background-color: var(--text-black);
     opacity: .35;
     cursor: pointer;
@@ -187,11 +180,6 @@
     align-items: stretch;
   }
 
-  :global(.tour-step > p) {
-    font-weight: 300;
-    font-size: 1rem;
-  }
-
 	.tour-footer {
 		display: flex;
 		align-items: center;
@@ -207,7 +195,7 @@
     text-transform: uppercase;
     outline: none;
     border: none;
-    font-size: .8rem;
+    font-size: .6em;
 	}
 
   button:hover {

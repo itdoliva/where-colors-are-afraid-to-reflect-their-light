@@ -54,7 +54,7 @@ bind:this={component}
   on:click={toggleDropdown}
   >
 
-    <div class="input__placeholder">
+    <div class="placeholder-wrapper">
       {#if !node}
         <p class="placeholder">{$_("region.select")}</p>
       {:else}
@@ -64,7 +64,7 @@ bind:this={component}
     </div>
 
     <svg 
-    class="input__chevron" 
+    class="chevron" 
     xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 -960 960 960"
     >
@@ -103,7 +103,6 @@ bind:this={component}
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-    font-size: clamp(14px, calc(0.875rem + (24 - 14) * ((100vw - 1280px) / (3440 - 1280))), 24px);
     min-height: 0vw;
   }
 
@@ -111,7 +110,6 @@ bind:this={component}
   .input {
     display: grid;
     grid-template-columns: minmax(0, 1fr) max-content;
-    min-height: 3.6rem;
 
     padding: .25rem 0 .25rem .5rem;
     background-color: rgba(255, 255, 255, 0.3);
@@ -132,35 +130,36 @@ bind:this={component}
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   }
 
-  .input .input__chevron {
+  .input .chevron {
     fill: var(--text-gray);
     transform: rotate(0);
-    width: 20px;
+    width: 1.4em;
     align-self: center;
   }
 
-  .input.input__active .input__chevron {
+  .input.input__active .chevron {
     transform: rotate(180deg);
   }
 
-  .input__placeholder {
+  .placeholder-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    min-height: 2.4em;
     padding: .05em 0;
-    gap: .25rem;
+    gap: .25em;
+    font-size: 1em;
   }
 
   .placeholder {
     color: var(--text-black);
     font-weight: 400;
     margin: 0 .15em;
-    font-size: 1em;
   }
 
   .placeholder.continent {
-    font-size: .8em;
+    font-size: .65em;
   }
 
   /* Dropdown styling */
@@ -199,8 +198,7 @@ bind:this={component}
   }
 
   .structure > div > p {
-    font-size: .9em;
-    margin: .3rem 0;
+    margin: .3em 0;
   }
 
   .hide {
