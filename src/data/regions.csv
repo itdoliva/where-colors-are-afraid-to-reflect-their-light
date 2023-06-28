@@ -1,0 +1,203 @@
+region,continent_id,region_id
+Algeria,c0,c0r0
+Angola,c0,c0r1
+Benin,c0,c0r2
+Botswana,c0,c0r3
+Burkina Faso,c0,c0r4
+Burundi,c0,c0r5
+Cabo Verde,c0,c0r6
+Cameroon,c0,c0r7
+Central African Republic,c0,c0r8
+Chad,c0,c0r9
+Comoros Islands,c0,c0r10
+Congo,c0,c0r11
+Dem. Rep. of Congo,c0,c0r12
+Djibouti,c0,c0r13
+Egypt,c0,c0r14
+Equatorial Guinea,c0,c0r15
+Eritrea,c0,c0r16
+Eswatini,c0,c0r17
+Ethiopia,c0,c0r18
+Gabon,c0,c0r19
+Gambia,c0,c0r20
+Ghana,c0,c0r21
+Guinea-Bissau,c0,c0r22
+Ivory Coast,c0,c0r23
+Kenya,c0,c0r24
+Lesotho,c0,c0r25
+Liberia,c0,c0r26
+Libya,c0,c0r27
+Madagascar,c0,c0r28
+Malawi,c0,c0r29
+Mali,c0,c0r30
+Mauritania,c0,c0r31
+Mauritius,c0,c0r32
+Morocco,c0,c0r33
+Mozambique,c0,c0r34
+Namibia,c0,c0r35
+Niger,c0,c0r36
+Nigeria,c0,c0r37
+Reunion,c0,c0r38
+Rwanda,c0,c0r39
+Senegal,c0,c0r40
+Seychelles,c0,c0r41
+Sierra Leone,c0,c0r42
+Somalia,c0,c0r43
+South Africa,c0,c0r44
+Sudan,c0,c0r45
+Tanzania,c0,c0r46
+Togo,c0,c0r47
+Tunisia,c0,c0r48
+Uganda,c0,c0r49
+Zambia,c0,c0r50
+Zimbabwe,c0,c0r51
+Aceh,c1,c1r0
+Afghanistan,c1,c1r1
+Bahrain,c1,c1r2
+Bangladesh,c1,c1r3
+Bhutan,c1,c1r4
+Brunei,c1,c1r5
+Cambodia,c1,c1r6
+Chechnya,c1,c1r7
+China incl. Hong Kong,c1,c1r8
+India,c1,c1r9
+Indonesia,c1,c1r10
+Iran,c1,c1r11
+Iraq,c1,c1r12
+Israel,c1,c1r13
+Japan,c1,c1r14
+Jordan,c1,c1r15
+Kazakhstan,c1,c1r16
+"Korea, North",c1,c1r17
+"Korea, South",c1,c1r18
+Kuwait,c1,c1r19
+Kyrgyzstan,c1,c1r20
+Laos,c1,c1r21
+Lebanon,c1,c1r22
+Macao,c1,c1r23
+Malaysia,c1,c1r24
+Maldives,c1,c1r25
+Mongolia,c1,c1r26
+Myanmar,c1,c1r27
+Nepal,c1,c1r28
+Oman,c1,c1r29
+Pakistan,c1,c1r30
+Philippines,c1,c1r31
+Qatar,c1,c1r32
+Russia,c1,c1r33
+Saudi Arabia,c1,c1r34
+Singapore,c1,c1r35
+Sri Lanka,c1,c1r36
+Syria,c1,c1r37
+Taiwan,c1,c1r38
+Tajikistan,c1,c1r39
+Thailand,c1,c1r40
+Turkey,c1,c1r41
+Turkmenistan,c1,c1r42
+United Arab Emirates,c1,c1r43
+Uzbekistan,c1,c1r44
+Vietnam,c1,c1r45
+Yemen,c1,c1r46
+Albania,c2,c2r0
+Andorra,c2,c2r1
+Armenia,c2,c2r2
+Austria,c2,c2r3
+Azerbaijan,c2,c2r4
+Belarus,c2,c2r5
+Belgium,c2,c2r6
+Bosnia and Herzegovina,c2,c2r7
+Bulgaria,c2,c2r8
+Croatia,c2,c2r9
+Cyprus,c2,c2r10
+Czechia,c2,c2r11
+Denmark,c2,c2r12
+Estonia,c2,c2r13
+Finland,c2,c2r14
+France,c2,c2r15
+Georgia,c2,c2r16
+Germany,c2,c2r17
+Gibraltar,c2,c2r18
+Greece,c2,c2r19
+Hungary,c2,c2r20
+Iceland,c2,c2r21
+Ireland,c2,c2r22
+Italy,c2,c2r23
+Kosovo,c2,c2r24
+Latvia,c2,c2r25
+Liechtenstein,c2,c2r26
+Lithuania,c2,c2r27
+Luxembourg,c2,c2r28
+Malta,c2,c2r29
+Moldova,c2,c2r30
+Monaco,c2,c2r31
+Montenegro,c2,c2r32
+Netherlands,c2,c2r33
+North Macedonia,c2,c2r34
+Norway,c2,c2r35
+Poland,c2,c2r36
+Portugal,c2,c2r37
+Romania,c2,c2r38
+San Marino,c2,c2r39
+Serbia,c2,c2r40
+Slovakia,c2,c2r41
+Slovenia,c2,c2r42
+Spain,c2,c2r43
+Sweden,c2,c2r44
+Switzerland,c2,c2r45
+Ukraine,c2,c2r46
+United Kingdom,c2,c2r47
+Vatican City,c2,c2r48
+Antigua and Barbuda,c3,c3r0
+Bahamas,c3,c3r1
+Barbados,c3,c3r2
+Belize,c3,c3r3
+Bermuda,c3,c3r4
+British Virgin Islands,c3,c3r5
+Canada,c3,c3r6
+Costa Rica,c3,c3r7
+Cuba,c3,c3r8
+Dominica,c3,c3r9
+Dominican Republic,c3,c3r10
+El Salvador,c3,c3r11
+Greenland,c3,c3r12
+Grenada,c3,c3r13
+Guadeloupe,c3,c3r14
+Guatemala,c3,c3r15
+Haiti,c3,c3r16
+Honduras,c3,c3r17
+Jamaica,c3,c3r18
+Martinique,c3,c3r19
+Mexico,c3,c3r20
+Nicaragua,c3,c3r21
+Panama,c3,c3r22
+Puerto Rico,c3,c3r23
+Sint Maarten,c3,c3r24
+Trinidad and Tobago,c3,c3r25
+USA,c3,c3r26
+Virgin Islands,c3,c3r27
+Australia,c4,c4r0
+Cook Islands,c4,c4r1
+Fiji,c4,c4r2
+French Polynesia,c4,c4r3
+Guam,c4,c4r4
+New Caledonia,c4,c4r5
+New Zealand,c4,c4r6
+Papua New Guinea,c4,c4r7
+Samoa,c4,c4r8
+Solomon Islands,c4,c4r9
+Tonga,c4,c4r10
+Vanuatu,c4,c4r11
+Argentina,c5,c5r0
+Aruba,c5,c5r1
+Bolivia,c5,c5r2
+Brazil,c5,c5r3
+Chile,c5,c5r4
+Colombia,c5,c5r5
+Curacao,c5,c5r6
+Ecuador,c5,c5r7
+Guyana,c5,c5r8
+Paraguay,c5,c5r9
+Peru,c5,c5r10
+Suriname,c5,c5r11
+Uruguay,c5,c5r12
+Venezuela,c5,c5r13
