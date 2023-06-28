@@ -13,10 +13,8 @@
     --off-white-light: #FAFAF9;
     --line-gray: #A1A09C;
     --gray-out: #E3E3E3;
-
     font-family: var(--font-body);
     font-size: clamp(12.6px, calc(0.7875rem + (22 - 12.6) * ((100vw - 1280px) / (3440 - 1280))), 22px);
-
     color: var(--text-black);
 }
 
@@ -25,6 +23,9 @@
 }
 
 body {
+
+
+
     margin: 0;
     padding: 0;
     background-color: var(--off-white);
