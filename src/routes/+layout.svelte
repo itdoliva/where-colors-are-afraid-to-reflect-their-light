@@ -7,6 +7,8 @@
   import { register, init, getLocaleFromNavigator, isLoading, _, locale } from "svelte-i18n";
   import Spinner from "../lib/Spinner.svelte";
 
+  export const prerender = true;
+
   register('en', () => import('../i18n/en.json'));
   register('en-us', () => import('../i18n/en.json'));
   register('pt', () => import('../i18n/br.json'));
