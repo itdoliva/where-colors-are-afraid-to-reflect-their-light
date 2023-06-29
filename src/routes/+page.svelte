@@ -328,8 +328,8 @@
   
     <div class="nosup-wrapper-inner">
       <div class="nosup-text">
-        <h3>{$_("nosup.1")}</h3>
-        <h3>{$_("nosup.2")}</h3>
+        <h3>{$_("no-support.1")}</h3>
+        <h3>{$_("no-support.2")}</h3>
         <h3>🏳️‍🌈</h3>
       </div>
     </div>  
